@@ -1,28 +1,26 @@
 import React from "react";
-import "./styles/home.css";
+import TopBar from "../components/home/TopBar";
+import HeroCarousel from "../components/home/HeroCarousel";
+import Intro from "../components/home/Intro";
+import ConoceMas from "../components/home/ConoceMas";
+import CursosDestacados from "../components/home/CursosDestacados";
+import Tecnicas from "../components/home/Tecnicas";
+import AllNewMakeup from "../components/home/AllNewMakeup";
+import Newsletter from "../components/home/Newsletter";
 
 const Home = () => {
-  return (
-    <div className="main-wrapper">
-        <header>
-            <nav className="navbar">
-                <a href="/" className="logo">MKBar Studio</a>
-                <ul className="nav-links">
-                    <li><a href="/nosotros">Nosotros</a></li>
-                    <li><a href="/servicios">Servicios</a></li>
-                    <li><a href="/cursos">Cursos</a></li>
-                    <li><a href="/contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main className="hero">
-            <h1>Bienvenido a MK Bar</h1>
-            <p>Un lugar para los amantes de la cocteleria y la mixología.</p>
-            <a href="/cursos" className="cta-button">Ver Cursos</a>
-        </main>
-    </div>
-  );
+    return (
+        <>
+            <TopBar />
+            <HeroCarousel />
+            <Intro />
+            <ConoceMas />
+            <CursosDestacados />
+            <Tecnicas />
+            <AllNewMakeup />
+            <Newsletter />
+        </>
+    );
 };
 
 export default Home;
