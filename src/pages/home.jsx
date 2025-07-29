@@ -10,7 +10,7 @@ import Newsletter from "../components/home/Newsletter";
 
 const Home = () => {
     return (
-        <>
+        <main>
             <TopBar />
             <HeroCarousel />
             <Intro />
@@ -19,7 +19,7 @@ const Home = () => {
             <Tecnicas />
             <AllNewMakeup />
             <Newsletter />
-        </>
+        </main>
     );
 };
 
